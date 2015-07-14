@@ -97,15 +97,6 @@ int main(int argc, char* agrv[]){
 
 }  
 
-int maxFunction(int A, int B){
-  if (A >= B){
-    return A;
-  }else{
-    return B;
-  }
-}
-
-
 int lcsFunction(int **mlcs, char* s1, char* s2,int mmax_index1, int mmax_index2){
   int i,j,k;
   i = 0;
