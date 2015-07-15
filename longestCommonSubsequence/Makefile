@@ -1,8 +1,5 @@
 # Author Kamil Agrawala\
-Class: CS344-001\
-Email: agrawalk@onid.orst.edu\
-Homework Assingment #5\
-Due: 03/15/15\
+Date: 03/15/15\
 
 CC = gcc
 DEBUG = -g
@@ -19,7 +16,7 @@ all: $(PROGS) -lm
 lcs: lcs.o 
 	$(CC) $(CFLAGS) -o $@ $^ -lm -lrt
 
-myhostdb.o: lcs.c 
+lcs.o: lcs.c 
 	  $(CC) $(CFLAGS) -c $< 
 
 clean: 
@@ -30,9 +27,9 @@ clean:
 	\rm -rf JUNK1 JUNK2
 	\rm -rf LOGS LOGC
 	\rm -rf lcs.o
+	\rm -rf lcs
 
-
-#	Git Revision Control System (BitBucket) 
+#	Git Revision Control System 
 push:
 	make clean 
 	git add --all
