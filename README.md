@@ -1,3 +1,6 @@
+Dynamic Programming
+===================
+
 This repo is a collection of dynamic programming problems.
 
 Commonly asked by interviewers at top tech companies. 
