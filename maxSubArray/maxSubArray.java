@@ -5,9 +5,9 @@ public class maxSubArray{
     public static int max (int x, int y) { return (x > y) ? x : y; }
     
     public static int maxSubArrayFunction(String str){	
-	// negative infinity
-	int max_curr = -10000000;;
-	int max      = -10000000;
+	// negative infinity value values.
+	int max_curr = -100000000;
+	int max      = -100000000;
 	int result;
 	int[] subArray= new int[2];
 	String [] buf = str.split(",");
@@ -46,12 +46,12 @@ public class maxSubArray{
 	    }
 	    else {
 		max_curr += S.get(i);
-		subArray[1] = i;
-		max = max(max_curr,max);		
+		if(max_curr > max){
+		    max = max_curr;
+		    subArray[1] = i;
+		}
 		System.out.printf("(4) max_curr=%d, subArray[0]=%d, subArray[1]=%d, max=%d\n",max_curr, subArray[0], subArray[1],max);
 	    }
-
-	    
 	}
 	
 	System.out.printf("\nMax Sub-Array Value: %d\n",max);		    
