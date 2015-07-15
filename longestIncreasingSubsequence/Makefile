@@ -23,8 +23,8 @@ clean:
 	\rm -rf *~
 	\rm -rf JUNK1 JUNK2
 	\rm -rf LOGS LOGC
-	\rm -rf lcs.o
-
+	\rm -rf lis.o
+	\rm -rf lis	
 
 #	Git Revision Control System (BitBucket) 
 push:
